@@ -1,3 +1,7 @@
+package AtividadeFinal;
+
+import java.util.*;
+
 class Item {
     String nome;
     int peso;
@@ -43,3 +47,15 @@ class ProblemaDaMochila {
             System.out.println(item.nome + " (Peso: " + item.peso + ", Valor: " + item.valor + ")");
         }
     }
+
+    public static void main(String[] args) {
+        List<Item> itens = new ArrayList<>();
+        itens.add(new Item("Computador", 3, 2000));
+        itens.add(new Item("Fone", 1, 500));
+        itens.add(new Item("Camera", 4, 1500));
+        itens.add(new Item("Livro", 2, 300));
+
+        int capacidade = 4;
+        mochila(capacidade, itens);
+    }
+}
