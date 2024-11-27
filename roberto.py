@@ -57,8 +57,8 @@ caminho_csv = "tmdb_5000_credits.csv"
 
 grafo, nomes_filmes = carregar_dados_creditos(caminho_csv)
 
-atorA = "Chris Evans"
-atorB = "Johnny Depp"
+atorA = input("Digite o nome do ator A: ")
+atorB = input("Digite o nome do ator B: ")
 
 cadeia = encontrar_cadeia_atores_bfs(grafo, atorA, atorB)
 
